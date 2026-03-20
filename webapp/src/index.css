@@ -1,0 +1,231 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  
+  /* IkigoriSmart Brand Colors - Light Mode */
+  --brand-main: #04966a;
+  --brand-hover: #e6f6f1;
+  --brand-dark: #037d59;
+  
+  --secondary-main: #1e3a8a;
+  --secondary-hover: #e8edff;
+  
+  --surface-main: #ffffff;
+  --surface-hover: #f3f4f6;
+  
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  
+  --success-main: #16a34a;
+  --success-hover: #e7f9ef;
+  
+  --error-main: #dc2626;
+  --error-hover: #fde8e8;
+  
+  --info-main: #2563eb;
+  --info-hover: #e7f0ff;
+  
+  --icons-primary: #04966a;
+  --icons-secondary: #6b7280;
+  --icons-muted: #9ca3af;
+  --icons-active: #037d59;
+  
+  /* Chart Colors */
+  --chart-1: #04966a;
+  --chart-2: #1e3a8a;
+  --chart-3: #16a34a;
+  --chart-4: #f59e0b;
+  --chart-5: #dc2626;
+  
+  /* Shadcn UI Variables */
+  --background: #ffffff;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --primary: #04966a;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #111827;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #f3f4f6;
+  --accent-foreground: #111827;
+  --destructive: #dc2626;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #04966a;
+  --sidebar: #f4f5f7;
+  --sidebar-foreground: #111827;
+  --sidebar-primary: #04966a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f3f4f6;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #04966a;
+}
+
+.dark {
+  /* IkigoriSmart Brand Colors - Dark Mode */
+  --brand-main: #16a34a;
+  --brand-hover: #1f2937;
+  --brand-dark: #15803d;
+  
+  --secondary-main: #3b82f6;
+  --secondary-hover: #1f2937;
+  
+  --surface-main: #111827;
+  --surface-hover: #1f2937;
+  
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  
+  --success-main: #22c55e;
+  --success-hover: #1f2937;
+  
+  --error-main: #ef4444;
+  --error-hover: #1f2937;
+  
+  --info-main: #3b82f6;
+  --info-hover: #1f2937;
+  
+  --icons-primary: #16a34a;
+  --icons-secondary: #9ca3af;
+  --icons-muted: #6b7280;
+  --icons-active: #22c55e;
+  
+  /* Chart Colors - Dark Mode */
+  --chart-1: #16a34a;
+  --chart-2: #3b82f6;
+  --chart-3: #22c55e;
+  --chart-4: #fbbf24;
+  --chart-5: #ef4444;
+  
+  /* Shadcn UI Variables - Dark Mode */
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --popover: #1e293b;
+  --popover-foreground: #f8fafc;
+  --primary: #16a34a;
+  --primary-foreground: #f8fafc;
+  --secondary: #334155;
+  --secondary-foreground: #f8fafc;
+  --muted: #334155;
+  --muted-foreground: #94a3b8;
+  --accent: #334155;
+  --accent-foreground: #f8fafc;
+  --destructive: #ef4444;
+  --border: #334155;
+  --input: #334155;
+  --ring: #16a34a;
+  --sidebar: #1a2230;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-primary: #16a34a;
+  --sidebar-primary-foreground: #f8fafc;
+  --sidebar-accent: #334155;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: #334155;
+  --sidebar-ring: #16a34a;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Select Hover Styles */
+[data-radix-select-viewport] [data-highlighted] {
+  background-color: var(--brand-hover) !important;
+  color: var(--brand-main) !important;
+}
+
+/* Sonner Toast Borders */
+[data-sonner-toast][data-type='success'] {
+  border-color: var(--brand-main) !important;
+}
+
+[data-sonner-toast][data-type='success'] [data-icon] {
+  color: var(--brand-main);
+}
+
+[data-sonner-toast][data-type='error'] {
+  border-color: var(--error-main) !important;
+}
+
+[data-sonner-toast][data-type='error'] [data-icon] {
+  color: var(--error-main);
+}
+
+/* Navbar icon buttons — always-on brand background */
+.navbar-icon-btn {
+  background-color: var(--brand-hover) !important;
+  color: var(--brand-main) !important;
+  cursor: pointer;
+}
+
+.navbar-icon-btn:hover {
+  background-color: color-mix(in srgb, var(--brand-main) 18%, transparent) !important;
+}
+
+/* Sidebar nav link buttons — brand hover on hover */
+.sidebar-nav-btn {
+  cursor: pointer !important;
+}
+
+.sidebar-nav-btn:hover {
+  background-color: var(--brand-hover) !important;
+  color: var(--brand-main) !important;
+}
