@@ -1,0 +1,161 @@
+# ============================================
+# ROOT .gitignore for IkigoriSmart Project
+# ============================================
+
+# ============================================
+# SENSITIVE DATA - Never commit these!
+# ============================================
+# Environment variables (contain API keys, database URLs)
+.env
+.env.local
+.env.*.local
+.env.production
+**/.env
+**/.env.local
+
+# API Keys & Secrets
+secrets/
+*.secret
+*.key
+*.pem
+credentials.json
+
+# ============================================
+# DEPENDENCIES
+# ============================================
+# Node modules (webapp, mobileapp, emailconfirm)
+node_modules/
+**/node_modules/
+
+# Python virtual environments (Model)
+.venv/
+venv/
+ENV/
+env/
+**/.venv/
+
+# ============================================
+# BUILD OUTPUTS
+# ============================================
+# Frontend builds
+dist/
+dist-ssr/
+build/
+**/dist/
+**/build/
+
+# Expo (mobile app)
+.expo/
+web-build/
+
+# ============================================
+# LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+**/*.log
+
+# ============================================
+# OS FILES
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# ============================================
+# IDE & EDITORS
+# ============================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ============================================
+# PYTHON CACHE
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# ============================================
+# JUPYTER NOTEBOOKS
+# ============================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================
+# LARGE FILES - Model folder
+# ============================================
+# ML Models & Weights
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pb
+*.tflite
+*.onnx
+*.bin
+*.pkl
+*.joblib
+
+# Datasets & Images (Model folder only)
+Model/raw_data/
+Model/dataset/
+Model/data_review/
+Model/mln_labels/
+Model/mln_labels_v2/
+Model/anaconda_projects/
+Model/**/*.csv
+Model/**/*.jpg
+Model/**/*.jpeg
+Model/**/*.png
+Model/**/*.gif
+Model/**/*.bmp
+Model/**/*.tiff
+
+# Model outputs
+Model/models/production/*.pt
+Model/models/production/*.pth
+Model/models/results_img/
+
+# ============================================
+# MOBILE APP SPECIFIC
+# ============================================
+# Native builds (generated)
+mobileapp/ios/
+mobileapp/android/
+
+# Android keystore
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+*.tmp
+*.temp
+*.local
+*.cache
+
+# ============================================
+# TYPESCRIPT
+# ============================================
+*.tsbuildinfo
