@@ -1,0 +1,64 @@
+appId: com.ikigori.smart
+name: Disease Scan Flow — gallery pick to diagnosis result
+---
+- launchApp
+
+- waitForAnimationToEnd:
+    timeout: 8000
+
+- swipe:
+    direction: UP
+    duration: 400
+
+- waitForAnimationToEnd:
+    timeout: 2000
+
+- tapOn:
+    text: "Login"
+    optional: true
+
+- tapOn:
+    text: "Enter your email"
+    optional: true
+
+- inputText: "imanzikabisa@gmail.com"
+
+- tapOn:
+    text: "Enter password"
+    optional: true
+
+- inputText: "test12345678"
+
+- tapOn:
+    text: "Login"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 8000
+
+- tapOn:
+    text: "Scan"
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+- assertVisible:
+    text: "Position leaf inside the frame"
+
+- tapOn:
+    id: "btn-gallery"
+
+- tapOn:
+    index: 0
+
+- tapOn:
+    text: "Predict Disease"
+
+- waitForAnimationToEnd:
+    timeout: 12000
+
+- assertVisible:
+    text: "Severity Level"
+
+- assertVisible:
+    text: "Confidence Result"

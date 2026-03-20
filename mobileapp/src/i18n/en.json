@@ -1,0 +1,515 @@
+{
+  "header": {
+    "appName": "IkigoriSmart",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "welcome": {
+    "tagline": "Smart Harvest, Secure Future.",
+    "description": "IkigoriSmart is the most comprehensive AI-powered tool built for maize farmers. Detect Maize Lethal Necrosis early, get real-time weather risk analysis, and protect your harvest.",
+    "shortDescription": "Track maize disease severity and predict spread risk using AI-powered image analysis and real-time weather intelligence all from a single photo upload."
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "loginSubtitle": "Login to continue using the app",
+    "registerSubtitle": "Enter your personal information",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm password",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "district": "District",
+    "districtPlaceholder": "Select your district",
+    "phoneNumber": "Phone Number",
+    "phoneNumberPlaceholder": "e.g. 07XXXXXXXX",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "termsText": "By signing up, you agree to the Terms of Use and Privacy Policy.",
+    "errors": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 6 characters",
+      "passwordMinLength8": "Password must be at least 8 characters",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordMismatch": "Passwords do not match",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "districtRequired": "Please select a district",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid Rwandan phone number (07XXXXXXXX)"
+    },
+    "toast": {
+      "registerSuccess": "Registration successful!\nCheck your email to confirm.",
+      "registerError": "Registration failed.\nPlease try again.",
+      "loginSuccess": "Welcome back!",
+      "loginError": "Login failed.\nPlease try again.",
+      "emailNotConfirmed": "Please confirm your email first.\nCheck your inbox.",
+      "invalidCredentials": "Incorrect email or password.",
+      "accountIncomplete": "Account setup incomplete.\nContact support.",
+      "emailConfirmed": "Email confirmed!\nYou can now log in.",
+      "emailConfirmError": "Email confirmation failed.\nPlease try again."
+    }
+  },
+  "hero": {
+    "title": "Protect Your Maize Harvest",
+    "mission": "Helping maize farmers detect Maize Lethal Necrosis early and prevent severe crop loss using AI-powered diagnosis and weather risk analysis.",
+    "ctaButton": "Start Scanning"
+  },
+  "objectives": {
+    "title": "App Objectives",
+    "earlyDetection": {
+      "title": "Early Detection",
+      "description": "Provide an AI-driven tool that identifies Maize Lethal Necrosis (MLN) at the \"Early\" stage before visible damage becomes irreversible."
+    },
+    "severityQuantification": {
+      "title": "Severity Quantification",
+      "description": "Categorize disease impact into four precise levels (Healthy, Early, Moderate, Severe) to ensure appropriate resource allocation."
+    },
+    "riskFusion": {
+      "title": "Risk Fusion",
+      "description": "Integrate real-time meteorological data (temperature, humidity, rainfall) with leaf diagnostics to predict the local spread risk."
+    },
+    "actionableAdvisory": {
+      "title": "Actionable Advisory",
+      "description": "Deliver localized Integrated Pest Management (IPM) strategies in both Kinyarwanda and English."
+    },
+    "dataDrivenMonitoring": {
+      "title": "Data-Driven Monitoring",
+      "description": "Create a digital archive of scans that allows for long-term tracking of disease trends across different Rwandan districts."
+    }
+  },
+  "targetUsers": {
+    "title": "Target Users & Benefits",
+    "farmersTitle": "For Farmers",
+    "farmersSubtitle": "The Primary Users",
+    "farmers": {
+      "diagnostics": {
+        "title": "Instant Diagnostics",
+        "description": "No more waiting for extension officers; get disease results in seconds using just a smartphone camera."
+      },
+      "losses": {
+        "title": "Reduced Losses",
+        "description": "Receive specific warnings when weather conditions (like high humidity) favor rapid disease spread."
+      },
+      "savings": {
+        "title": "Cost Savings",
+        "description": "Use the right amount of pesticide or fertilizer based on the actual severity level, avoiding wasteful spending."
+      },
+      "language": {
+        "title": "Local Language Support",
+        "description": "Access expert advice in Kinyarwanda, making complex scientific recommendations easy to follow."
+      }
+    },
+    "adminsTitle": "For RAB",
+    "adminsSubtitle": "Rwanda Agriculture Board",
+    "admins": {
+      "surveillance": {
+        "title": "Real-Time Surveillance",
+        "description": "View a heat map of MLN outbreaks across Musanze, Nyabihu, Rubavu, and Burera."
+      },
+      "planning": {
+        "title": "Resource Planning",
+        "description": "Identify high-risk zones to distribute resistant seeds or chemical interventions more efficiently."
+      },
+      "accuracy": {
+        "title": "Data Accuracy",
+        "description": "Access a \"Cleaned\" dataset of high-confidence scans to improve future agricultural research."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Your Journey to a Healthy Harvest",
+    "step1": {
+      "title": "Capture the Symptom",
+      "description": "Open the New Scan tool and take a clear, well-lit photo of a maize leaf. Ensure the leaf is centered and the spots are in focus.",
+      "tip": "Avoid shadows and keep the phone parallel to the leaf."
+    },
+    "step2": {
+      "title": "AI & Climate Analysis",
+      "description": "The app simultaneously runs two processes: CNN Analysis inspects the leaf for chlorosis (yellowing) and necrosis (browning). Weather Fetching pulls live temperature and humidity data from your farm's GPS coordinates."
+    },
+    "step3": {
+      "title": "Integrated Results",
+      "description": "Within 3 seconds, you receive a Fusion Report showing your Severity Level (e.g., Moderate) and your Spread Risk (e.g., High Risk due to upcoming rain)."
+    },
+    "step4": {
+      "title": "Expert Recommendations",
+      "description": "Based on the results, the app provides a tailored IPM Plan. For Early/Moderate: apply specific pesticide and monitor neighbors. For Severe: uproot and burn infected plants immediately."
+    },
+    "step5": {
+      "title": "Save & Track",
+      "description": "The scan is automatically saved to your History. Revisit this scan later to see if your field is getting healthier after following the advice."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": {
+      "question": "What is MLN and why is it dangerous?",
+      "answer": "Maize Lethal Necrosis (MLN) is a severe disease caused by the combination of two viruses. It causes maize leaves to turn yellow (chlorosis) and eventually dry up (necrosis). It is dangerous because it spreads rapidly via insects like thrips and beetles, and if left untreated, it can destroy 100% of your harvest in a single season."
+    },
+    "q2": {
+      "question": "How does IkigoriSmart know how \"severe\" the disease is?",
+      "answer": "The app uses an advanced Artificial Intelligence model (CNN) that has been trained on thousands of maize leaf images. It \"looks\" at the percentage of yellow and brown spots on your leaf. Early: Small spots, but the plant is still growing. Moderate: Large yellow patches and some drying. Severe: The leaf is mostly dead/brown, and the plant's life is at risk."
+    },
+    "q3": {
+      "question": "Why does the app ask for my GPS and Weather data?",
+      "answer": "MLN spread is highly dependent on the environment. Warm temperatures and high humidity make it easier for the insects that carry the virus to multiply. By \"fusing\" your leaf scan with your local weather data, IkigoriSmart can tell you not just if your plant is sick, but how likely it is that the disease will spread to the rest of your field or your neighbors."
+    },
+    "q4": {
+      "question": "What should I do if my result is \"Severe\"?",
+      "answer": "If the app detects a severe infection, the safest action is usually to uproot the infected plants immediately and burn them far from your field. This prevents the virus from spreading to healthy plants. The app will provide specific \"Immediate Actions\" and \"Chemical Options\" based on the latest guidelines from the Rwanda Agriculture Board (RAB)."
+    },
+    "q5": {
+      "question": "Can I use the app without an internet connection?",
+      "answer": "You can take photos and save them to the app while offline in the field. However, to get the AI Diagnosis and Live Weather Risk, you will need a brief internet connection (3G/4G or Wi-Fi) so the app can communicate with our cloud servers and weather providers."
+    }
+  },
+  "bottomCTA": {
+    "notLoggedIn": {
+      "title": "Get Started Today",
+      "description": "Create an account to start protecting your maize crops",
+      "signIn": "Sign In",
+      "signUp": "Sign Up"
+    },
+    "loggedIn": {
+      "dashboard": "Go to Dashboard"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "scan": "Scan",
+    "alerts": "Alerts",
+    "profile": "Profile"
+  },
+  "common": {
+    "readMore": "Read more",
+    "readLess": "Read less",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Confirm"
+  },
+  "contact": {
+    "title": "Need Help?",
+    "subtitle": "Our team is here to support you. Reach us directly through any of the channels below.",
+    "emailLabel": "Email Us",
+    "emailValue": "support@ikigori.rw",
+    "callLabel": "Call Us",
+    "callValue": "+250 788 123 456",
+    "socialLabel": "Follow Us",
+    "socialValue": "@IkigoriSmart",
+    "copyright": "© 2026 IkigoriSmart. All rights reserved.",
+    "errorTitle": "Unable to Open",
+    "errorMessage": "Could not open this link. Please try manually."
+  },
+  "diagnosticStandards": {
+    "title": "Diagnostic Standards",
+    "subtitle": "Explore the four stages of MLN health and infection identified by IkigoriSmart."
+  },
+  "alerts": {
+    "title": "Alerts",
+    "filterAll": "All",
+    "filterHigh": "High",
+    "filterMedium": "Medium",
+    "filterLow": "Low",
+    "showing": "Showing {{count}} alerts",
+    "sortBy": "Sort By",
+    "newestFirst": "Newest First",
+    "oldestFirst": "Oldest First",
+    "markAsRead": "Mark as Read",
+    "viewDetails": "View Details",
+    "noAlertsFound": "No Alerts Found",
+    "noAlertsDescription": "There are no alerts matching your current filter.",
+    "clearFilter": "Clear Filter",
+    "noUnreadAlerts": "You're all caught up!",
+    "noUnreadAlertsDesc": "No new alerts at the moment. Check back later.",
+    "loadError": "Could not load alerts.",
+    "retry": "Try again",
+    "markAsReadError": "Failed to mark alert as read. Please try again.",
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {{page}} of {{total}}"
+  },
+  "profile": {
+    "tabProfile": "Profile",
+    "tabTutorials": "Tutorials",
+    "tabMyLearning": "My Learning",
+    "tabPredictions": "Predictions",
+    "personalInfo": "Personal Information",
+    "security": "Security",
+    "location": "Location",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "email": "Email",
+    "phoneNumber": "Phone Number",
+    "phoneNumberPlaceholder": "07XXXXXXXX",
+    "password": "Password",
+    "passwordPlaceholder": "Enter new password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm new password",
+    "district": "District",
+    "emailNote": "Email cannot be changed",
+    "saveChanges": "Save Changes",
+    "logOut": "Log Out",
+    "logoutTitle": "Log Out",
+    "logoutMessage": "Are you sure you want to log out?",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "success": "Success",
+    "profileUpdated": "Profile updated successfully",
+    "filterAll": "All",
+    "filterVideo": "Video",
+    "filterReading": "Reading",
+    "tutorials": "Tutorials",
+    "noTutorialsFound": "No tutorials found",
+    "noSavedTutorials": "No Saved Tutorials",
+    "noSavedTutorialsDesc": "Save tutorials from the Tutorials tab to track your learning progress.",
+    "browseTutorials": "Browse Tutorials",
+    "saved": "Saved",
+    "completed": "Completed",
+    "inProgress": "In Progress",
+    "progress": "Progress",
+    "errors": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid Rwandan phone number (07XXXXXXXX)",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "passwordMismatch": "Passwords do not match"
+    },
+    "logoutSuccess": "Logged out successfully",
+    "logoutError": "Failed to log out. Please try again.",
+    "updateSuccess": "Profile updated successfully.",
+    "updateError": "Failed to update profile. Please try again.",
+    "avatarSuccess": "Profile photo updated.",
+    "avatarError": "Failed to upload photo. Please try again.",
+    "passwordSuccess": "Password updated successfully.",
+    "passwordError": "Failed to update password. Please try again.",
+    "passwordMismatch": "Passwords do not match.",
+    "passwordTooShort": "Password must be at least 8 characters.",
+    "phoneInvalid": "Enter a valid Rwandan phone number (07XXXXXXXX).",
+    "firstNameRequired": "First name is required.",
+    "lastNameRequired": "Last name is required.",
+    "districtRequired": "Please select your district.",
+    "predictions": {
+      "title": "Scan History",
+      "count_one": "{{count}} prediction",
+      "count_other": "{{count}} predictions",
+      "empty": "No saved predictions yet.",
+      "emptySubtext": "Run a scan and save the result to see it here.",
+      "loadError": "Could not load predictions.",
+      "retry": "Try again",
+      "deleteTitle": "Delete Prediction",
+      "deleteMessage": "Are you sure you want to delete this prediction? This cannot be undone.",
+      "deleteSuccess": "Prediction deleted.",
+      "deleteError": "Failed to delete prediction. Please try again.",
+      "risk": "Risk"
+    }
+  },
+  "scan": {
+    "cameraTitle": "Scan Maize",
+    "tips": "Tips",
+    "positionLeaf": "Position leaf inside the frame",
+    "predictButton": "Predict Disease",
+    "tipsTitle": "Tips",
+    "tip1": "Ensure good lighting",
+    "tip2": "Focus directly on the leaf",
+    "tip3": "Avoid shadows on the plant",
+    "close": "Close",
+    "diagnosisTitle": "Diagnosis Result",
+    "viewWeatherRisk": "View Weather Risk →",
+    "healthyLabel": "Healthy Condition",
+    "healthyDesc": "No signs of disease detected on the leaf surface.",
+    "earlyLabel": "Early Symptoms Detected",
+    "earlyDesc": "Minor signs of infection detected. Monitor closely.",
+    "moderateLabel": "Moderate Infection",
+    "moderateDesc": "Visible symptoms of disease. Take action soon.",
+    "severeLabel": "Severe Infection",
+    "severeDesc": "Severe disease detected. Immediate action required.",
+    "weatherForecast": "Forecast the spread of your disease based on weather conditions",
+    "weatherTitle": "Weather Risk Analysis",
+    "weatherSubtitle": "Local weather conditions affecting disease spread",
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "rainfall": "Rainfall",
+    "highRiskWarning": "High spread risk detected based on current weather conditions.",
+    "viewRecommendations": "View Recommendations →",
+    "recommendationsTitle": "Recommendations",
+    "recommendationsSubtitle": "Immediate actions to manage the detected infection",
+    "uprootTitle": "Uproot Infected Plants",
+    "uprootDesc": "Remove and destroy severely infected plants immediately",
+    "fungicideTitle": "Apply Fungicide",
+    "fungicideDesc": "Use recommended fungicide at the correct dosage",
+    "isolateTitle": "Isolate the Area",
+    "isolateDesc": "Prevent spread by isolating the affected crop rows",
+    "monitorTitle": "Monitor Daily",
+    "monitorDesc": "Check surrounding plants every 24 hours",
+    "feedbackTitle": "Share Your Feedback",
+    "feedbackPlaceholder": "Add your comments here...",
+    "saveToHistory": "Save to History",
+    "home": "Home",
+    "weatherInputTitle": "Weather Input",
+    "selectDistrict": "Select Your District",
+    "selectDistrictSubtitle": "Choose the district where your farm is located",
+    "weatherSource": "Weather Source",
+    "useCurrentWeather": "Use Current Weather",
+    "enterManually": "Enter Manually",
+    "fetchingWeather": "Fetching weather data...",
+    "weatherSourceNote": "Weather data sourced from Open-Meteo for",
+    "lastUpdated": "Last updated",
+    "fetchError": "Unable to fetch weather data",
+    "fetchErrorSubtitle": "Please check your connection and try again",
+    "retry": "Retry",
+    "weather": {
+      "validation": {
+        "temperatureRequired": "Temperature is required",
+        "temperatureRange": "Temperature must be between 10°C and 35°C",
+        "humidityRequired": "Humidity is required",
+        "humidityRange": "Humidity must be between 0% and 100%",
+        "rainfallRequired": "Rainfall is required",
+        "rainfallRange": "Rainfall must be between 0mm and 500mm"
+      }
+    },
+    "previewConfirm": "Preview & Confirm →",
+    "weatherSummaryTitle": "Weather Summary",
+    "weatherSummarySubtitle": "The following conditions will be used to predict spread risk",
+    "apiData": "API Data",
+    "manuallyEntered": "Manually Entered",
+    "statusHigh": "High",
+    "statusNormal": "Normal",
+    "statusLow": "Low",
+    "highRiskConditions": "One or more conditions indicate high disease spread risk.",
+    "runPrediction": "Run Prediction →",
+    "spreadRiskTitle": "Spread Risk & Actions",
+    "lowSpreadRisk": "Low Spread Risk",
+    "mediumSpreadRisk": "Medium Spread Risk",
+    "highSpreadRisk": "High Spread Risk Detected",
+    "immediateActions": "Immediate Actions",
+    "rateThisPrediction": "Rate This Prediction",
+    "shareObservations": "Share your observations...",
+    "preview": {
+      "severityLabel": "MLN Severity",
+      "lowRisk": "Low Risk",
+      "moderateRisk": "Moderate Risk",
+      "highRisk": "High Risk",
+      "vectorsInactive": "< 22°C — Vectors inactive",
+      "moderateConcern": "Moderate concern",
+      "dangerZone": "⚠ Danger zone",
+      "vectorsSlowDown": "> 30°C — Vectors slow down",
+      "lowHumidityRisk": "< 60% — Low risk",
+      "droughtStress": "< 20mm — ⚠ Drought stress",
+      "sufficientRainfall": "> 50mm — Sufficient rainfall"
+    },
+    "validation": {
+      "error": "Validation Error",
+      "invalidFileType": "Invalid file type. Please select a JPEG, PNG, or BMP image.",
+      "fileTooLarge": "File too large. Maximum size is 10 MB.",
+      "imageRequired": "Please select an image to scan.",
+      "permissionRequired": "Permission required to access camera or gallery."
+    },
+    "api": {
+      "error": "Error",
+      "apiUnavailable": "Service unavailable. Please try again later.",
+      "predictionFailed": "Prediction failed. Please try again.",
+      "networkError": "Network error. Check your connection and try again.",
+      "analyzing": "Analyzing image..."
+    },
+    "severity": {
+      "healthyLabel": "Healthy Condition",
+      "healthyDesc": "No signs of Maize Lethal Necrosis detected. Your plant appears healthy. Continue monitoring regularly.",
+      "earlyLabel": "Early Symptoms Detected",
+      "earlyDesc": "Initial yellow streaks and small chlorotic spots detected. Act now before the infection progresses further.",
+      "moderateLabel": "Moderate Infection",
+      "moderateDesc": "Significant leaf drying and spreading yellow patches detected. Immediate treatment is strongly recommended.",
+      "severeLabel": "Severe Infection",
+      "severeDesc": "Complete necrosis and leaf drying detected. Uproot and destroy infected plants immediately to prevent spread."
+    },
+    "diagnosis": {
+      "severityLevel": "Severity Level",
+      "confidenceResult": "Confidence Result",
+      "confidenceHigh": "HIGH CONFIDENCE",
+      "confidenceMedium": "MEDIUM CONFIDENCE",
+      "confidenceLow": "LOW CONFIDENCE"
+    },
+    "prediction": {
+      "apiError": "Prediction failed. Check your connection and try again.",
+      "running": "Running prediction..."
+    },
+    "feedback": {
+      "title": "Rate This Prediction",
+      "placeholder": "Share your thoughts about this result...",
+      "submit": "Submit Feedback",
+      "submitSuccess": "Thank you for your feedback!",
+      "submitError": "Failed to submit feedback. Please try again.",
+      "alreadySubmitted": "You have already submitted feedback for this prediction.",
+      "savePredictionFirst": "Please save the prediction to history before submitting feedback."
+    },
+    "history": {
+      "save": "Save to History",
+      "saveSuccess": "Prediction saved to your history.",
+      "saveError": "Failed to save prediction. Please try again."
+    },
+    "ipm": {
+      "immediate": "Immediate Action",
+      "monitor": "Monitor",
+      "preventive": "Preventive",
+      "filterAll": "All",
+      "aiTitle": "AI-Powered Recommendation",
+      "empty": "No recommendations found for this risk level.",
+      "loadError": "Could not generate a recommendation. Please try again.",
+      "retry": "Try Again"
+    }
+  },
+  "tutorials": {
+    "saveSuccess": "Tutorial saved to My Learning.",
+    "saveError": "Failed to save tutorial.",
+    "alreadySaved": "This tutorial is already in your learning list.",
+    "deleteSuccess": "Tutorial removed from My Learning.",
+    "deleteError": "Failed to remove tutorial.",
+    "accessContent": "Click here to access content",
+    "typeVideo": "Video",
+    "typeReading": "Reading",
+    "loadingVideo": "Loading video...",
+    "loadingPDF": "Loading PDF...",
+    "loadingContent": "Loading content...",
+    "contentError": "Unable to load content",
+    "contentErrorMessage": "Unable to load content. Please check your connection and try again.",
+    "retry": "Retry",
+    "tutorialContent": "Tutorial Content",
+    "noContentAvailable": "No content available for this tutorial."
+  },
+  "learning": {
+    "empty": "No saved tutorials yet. Browse tutorials to get started.",
+    "neverAccessed": "Never accessed",
+    "savedOn": "Saved on",
+    "lastAccessed": "Last accessed",
+    "progressLabel": "Your Progress",
+    "addNoteLabel": "Add a Note",
+    "notePlaceholder": "Write your notes for this tutorial...",
+    "addNote": "Add Note",
+    "noteAdded": "Added",
+    "noNotes": "No notes yet. Add your first note above.",
+    "deleteNoteTitle": "Delete Note",
+    "deleteNoteMessage": "Are you sure you want to delete this note?",
+    "deleteConfirmTitle": "Remove Tutorial",
+    "deleteConfirmMessage": "Are you sure you want to remove this tutorial from your learning list?",
+    "updateProgress": "Update Progress",
+    "editProgressTitle": "Update Your Progress",
+    "delete": "Remove",
+    "progressSuccess": "Progress updated successfully.",
+    "progressError": "Failed to update progress. Please try again.",
+    "noteAddSuccess": "Note added successfully.",
+    "noteAddError": "Failed to add note. Please try again.",
+    "noteDeleteSuccess": "Note deleted.",
+    "noteDeleteError": "Failed to delete note. Please try again."
+  }
+}

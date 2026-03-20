@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "IkigoriSmart",
+    "slug": "ikigori-smart",
+    "scheme": "ikigori",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ikigori.smart",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to your camera to scan maize leaves for disease detection.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select images of maize leaves for analysis.",
+        "NSSpeechRecognitionUsageDescription": "This app uses speech recognition to accept voice commands for hands-free scanning.",
+        "NSMicrophoneUsageDescription": "This app needs microphone access to listen for voice commands."
+      }
+    },
+    "android": {
+      "package": "com.ikigori.smart",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-voice/voice"
+    ]
+  }
+}

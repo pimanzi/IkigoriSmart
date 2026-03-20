@@ -1,0 +1,16 @@
+appId: com.ikigori.smart
+---
+- launchApp
+
+- takeScreenshot: "1-just-launched"
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+- takeScreenshot: "2-after-5s"
+
+- swipe:
+    direction: UP
+    duration: 400
+
+- takeScreenshot: "3-after-swipe"

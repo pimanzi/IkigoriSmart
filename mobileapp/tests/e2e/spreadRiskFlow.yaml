@@ -1,0 +1,91 @@
+appId: com.ikigori.smart
+name: Spread Risk Flow — from diagnosis to risk result
+---
+- launchApp
+
+- waitForAnimationToEnd:
+    timeout: 8000
+
+- swipe:
+    direction: UP
+    duration: 400
+
+- waitForAnimationToEnd:
+    timeout: 2000
+
+- tapOn:
+    text: "Login"
+    optional: true
+
+- tapOn:
+    text: "Enter your email"
+    optional: true
+
+- inputText: "imanzikabisa@gmail.com"
+
+- tapOn:
+    text: "Enter password"
+    optional: true
+
+- inputText: "test12345678"
+
+- tapOn:
+    text: "Login"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 8000
+
+- tapOn:
+    text: "Scan"
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+- tapOn:
+    id: "btn-gallery"
+
+- tapOn:
+    index: 0
+
+- tapOn:
+    text: "Predict Disease"
+
+- waitForAnimationToEnd:
+    timeout: 12000
+
+- assertVisible:
+    text: "Severity Level"
+
+- tapOn:
+    text: "View Weather Risk"
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+- tapOn:
+    text: "Musanze"
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+- assertVisible:
+    text: "Temperature"
+
+- tapOn:
+    text: "Preview & Confirm"
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+- assertVisible:
+    text: "Weather Summary"
+
+- tapOn:
+    text: "Run Prediction"
+
+- waitForAnimationToEnd:
+    timeout: 12000
+
+- assertVisible:
+    text: "Spread Risk"

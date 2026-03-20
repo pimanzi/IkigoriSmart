@@ -1,0 +1,515 @@
+{
+  "header": {
+    "appName": "IkigoriSmart",
+    "signIn": "Injira",
+    "signUp": "Iyandikishe"
+  },
+  "welcome": {
+    "tagline": "Isarura Ryiza, Ejo Hazaza Hashyize Umutekano.",
+    "description": "IkigoriSmart ni igikoresho cy'ubwenge bw'ikoranabuhanga cyubatswe ku bahinzi b'ibigori. Menya indwara ya MLN hakiri kare, usuzume ibyago by'ikirere mu gihe nyacyo, kandi urinde umusaruro wawe.",
+    "shortDescription": "Kurikirana ubukana bw'indwara z'ibigori no kumenya ibyago byo gukwira ukoresheje isesengura ry'amafoto n'ubumenyi bw'ikirere mu gihe nyacyo byose uhereye ku ifoto imwe."
+  },
+  "auth": {
+    "login": "Injira",
+    "register": "Iyandikishe",
+    "loginSubtitle": "Injira kugira ngo ukomeze gukoresha porogaramu",
+    "registerSubtitle": "Andika amakuru yawe bwite",
+    "email": "Imeyili",
+    "emailPlaceholder": "Andika imeyili yawe",
+    "password": "Ijambo ry'ibanga",
+    "passwordPlaceholder": "Andika ijambo ry'ibanga",
+    "confirmPassword": "Emeza ijambo ry'ibanga",
+    "confirmPasswordPlaceholder": "Emeza ijambo ry'ibanga",
+    "firstName": "Izina ry'Ibanze",
+    "firstNamePlaceholder": "Andika izina ryawe ry'ibanze",
+    "lastName": "Izina ry'Umuryango",
+    "lastNamePlaceholder": "Andika izina ry'umuryango",
+    "district": "Akarere",
+    "districtPlaceholder": "Hitamo akarere kawe",
+    "phoneNumber": "Nomero ya Telefone",
+    "phoneNumberPlaceholder": "urugero: 07XXXXXXXX",
+    "forgotPassword": "Wibagiwe ijambo ry'ibanga?",
+    "noAccount": "Nta konti ufite?",
+    "termsText": "Mu kwiyandikisha, wemera Amabwiriza y'Imikoreshereze n'Politiki y'Ibanga.",
+    "errors": {
+      "emailRequired": "Imeyili irakenewe",
+      "emailInvalid": "Nyamuneka andika imeyili yemewe",
+      "passwordRequired": "Ijambo ry'ibanga rirakenewe",
+      "passwordMinLength": "Ijambo ry'ibanga rigomba kugira byibura inyuguti 6",
+      "passwordMinLength8": "Ijambo ry'ibanga rigomba kugira byibura inyuguti 8",
+      "confirmPasswordRequired": "Nyamuneka emeza ijambo ry'ibanga",
+      "passwordMismatch": "Amagambo y'ibanga ntabwo ahura",
+      "firstNameRequired": "Izina ry'ibanze rirakenewe",
+      "lastNameRequired": "Izina ry'umuryango rirakenewe",
+      "districtRequired": "Nyamuneka hitamo akarere",
+      "phoneRequired": "Nomero ya telefone irakenewe",
+      "phoneInvalid": "Nyamuneka andika nomero ya telefone y'u Rwanda yemewe (07XXXXXXXX)"
+    },
+    "toast": {
+      "registerSuccess": "Kwiyandikisha byagenze neza!\nReba imeyili yawe.",
+      "registerError": "Kwiyandikisha byanze.\nOngera ugerageze.",
+      "loginSuccess": "Murakaza neza!",
+      "loginError": "Kwinjira byanze.\nOngera ugerageze.",
+      "emailNotConfirmed": "Emeza imeyili yawe mbere.\nReba imeyili yawe.",
+      "invalidCredentials": "Imeyili cyangwa ijambo ry'ibanga si ryo.",
+      "accountIncomplete": "Konti ntiyuzuye.\nHamagara ubufasha.",
+      "emailConfirmed": "Imeyili yemejwe!\nUrashobora kwinjira.",
+      "emailConfirmError": "Kwemeza imeyili byanze.\nOngera ugerageze."
+    }
+  },
+  "hero": {
+    "title": "Rinda Umusaruro w'Ibigori Byawe",
+    "mission": "Gufasha abahinzi b'ibigori mu kumenya indwara ya Maize Lethal Necrosis hakiri kare no gukumira igihombo kinini hakoreshejwe ubwenge bw'ikoranabuhanga.",
+    "ctaButton": "Tangira Gusuzuma"
+  },
+  "objectives": {
+    "title": "Intego z'Porogaramu",
+    "earlyDetection": {
+      "title": "Kumenya Hakiri Kare",
+      "description": "Gutanga igikoresho gikoreshwa na AI cyamenya indwara ya MLN mu cyiciro cyo \"Hakiri Kare\" mbere yuko ibisebe bigaragara bitagishobora gusubizwa."
+    },
+    "severityQuantification": {
+      "title": "Ibipimo by'Ubukana",
+      "description": "Gushyira indwara mu byiciro bine bikwiye (Muzima, Hakiri Kare, Hagati, Bikomeye) kugira ngo haboneke igabana ry'ibikoresho rikwiye."
+    },
+    "riskFusion": {
+      "title": "Gusuzuma Ibyago",
+      "description": "Guhuza amakuru y'ikirere y'igihe nyacyo (ubushyuhe, ubuhehere, imvura) n'isuzuma ry'amababi kugira ngo hamenyekane ibyago byo gukwirakwira."
+    },
+    "actionableAdvisory": {
+      "title": "Inama Zishyirwa mu Bikorwa",
+      "description": "Gutanga ingamba z'IPM zijyanye n'ahantu mu Kinyarwanda no mu Cyongereza."
+    },
+    "dataDrivenMonitoring": {
+      "title": "Gukurikirana Hakoreshejwe Amakuru",
+      "description": "Gushiraho ububiko bw'ikoranabuhanga bw'isuzuma butuma hakurikiranwa imiterere y'indwara mu turere dutandukanye tw'u Rwanda."
+    }
+  },
+  "targetUsers": {
+    "title": "Abayikoresha n'Inyungu",
+    "farmersTitle": "Ku Bahinzi",
+    "farmersSubtitle": "Abakoresha Bakuru",
+    "farmers": {
+      "diagnostics": {
+        "title": "Isuzuma Ryihuse",
+        "description": "Ntugikeneye gutegereza abajyanama mu buhinzi; menya ibisubizo by'indwara mu masegonda make ukoresheje kamera ya telefone."
+      },
+      "losses": {
+        "title": "Kugabanya Igihombo",
+        "description": "Habwe umuburo iyo ibihe by'ikirere (nk'ubuhehere bwinshi) bishimishije gukwirakwira kw'indwara."
+      },
+      "savings": {
+        "title": "Kuzigama Amafaranga",
+        "description": "Koresha ingano ikwiye y'umuti cyangwa ifumbire ukurikije ubukana bw'ukuri, wirinde gukoresha nta mpamvu."
+      },
+      "language": {
+        "title": "Gufashwa mu Kinyarwanda",
+        "description": "Bona inama z'impuguke mu Kinyarwanda, bituma inama z'ubumenyi zisobanuka neza."
+      }
+    },
+    "adminsTitle": "Kuri RAB",
+    "adminsSubtitle": "Ikigo cy'Ubuhinzi mu Rwanda",
+    "admins": {
+      "surveillance": {
+        "title": "Gukurikirana mu Gihe Nyacyo",
+        "description": "Reba ikarita y'ubushyuhe y'ikwirakwira rya MLN muri Musanze, Nyabihu, Rubavu, na Burera."
+      },
+      "planning": {
+        "title": "Gutegura Ibikoresho",
+        "description": "Menya uturere dufite ibyago byinshi kugira ngo imbuto zihanganira indwara zitangwe neza."
+      },
+      "accuracy": {
+        "title": "Amakuru Ahamye",
+        "description": "Bona amakuru y'isuzuma yizewe kugira ngo huboneke ubushakashatsi bwiza bw'ubuhinzi mu gihe kizaza."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Imikorere",
+    "subtitle": "Urugendo Rwawe ku Musaruro Muzima",
+    "step1": {
+      "title": "Fata Ibimenyetso",
+      "description": "Fungura igikoresho cyo Gusuzuma ufate ifoto nziza y'ikibabi cy'ibigori. Menya neza ko ikibabi kiri hagati kandi ibizere bigaragara neza.",
+      "tip": "Irinde ibicucu kandi ufate telefone igana ikibabi."
+    },
+    "step2": {
+      "title": "Isuzuma rya AI n'Ikirere",
+      "description": "Porogaramu ikora ibikorwa bibiri icyarimwe: Isuzuma rya CNN rikurikiranira amababi (umuhondo n'ikijuju). Gukusanya amakuru y'ubushyuhe n'ubuhehere hakoreshejwe GPS."
+    },
+    "step3": {
+      "title": "Ibisubizo Bihujwe",
+      "description": "Mu masegonda 3, habwe raporo y'isuzuma ebyombeka igaragaza Ubukana (urugero: Hagati) n'Ibyago byo Gukwirakwira (urugero: Ibyago Byinshi kubera imvura izaza)."
+    },
+    "step4": {
+      "title": "Inama z'Impuguke",
+      "description": "Hakurikijwe ibisubizo, porogaramu itanga gahunda ya IPM ijyanye n'ibyo ubona. Ku Hakiri Kare/Hagati: koresha umuti usuzumwe kandi ukurikirane abaturanyi. Ku Bikomeye: randura kandi utwike ibimera byandujwe."
+    },
+    "step5": {
+      "title": "Bika & Kurikirana",
+      "description": "Isuzuma ribikwa ku buryo bwikora mu mateka yawe. Ushobora kugaruka kureba iri suzuma nyuma kugira ngo urebe niba umurima wawe ugenda umera neza ukurikije inama."
+    }
+  },
+  "faq": {
+    "title": "Ibibazo Bikunze Kubazwa",
+    "q1": {
+      "question": "Ni iyihe MLN kandi kuki ari ikomeye?",
+      "answer": "Maize Lethal Necrosis (MLN) ni indwara ikomeye iterwa n'ihuza rya virusi ebyiri. Itera amababi y'ibigori guhinduka umuhondo (chlorosis) hanyuma akumira (necrosis). Ni ikomeye kubera ko ikwirakwira vuba binyuze mu budukoko nk'udukoko duto n'udusengenya, kandi niba itavuwe, ishobora gusenya 100% y'umusaruro wawe mu gihembwe kimwe."
+    },
+    "q2": {
+      "question": "IkigoriSmart imenya ite 'ubukana' bw'indwara?",
+      "answer": "Porogaramu ikoresha uburyo bw'ubwenge bw'ikoranabuhanga (CNN) bwahuguwe ku mashusho ibihumbi y'amababi y'ibigori. Ireba ijanisha ry'ibizimba by'umuhondo n'umukara ku kibabi cyawe. Hakiri Kare: Ibizimba bito, ariko ikimera kiracyamera. Hagati: Ibice binini by'umuhondo n'ukumira. Bikomeye: Ikibabi cyashize/umukara, kandi ubuzima bw'ikimera buri mu byago."
+    },
+    "q3": {
+      "question": "Kuki porogaramu isaba GPS n'amakuru y'ikirere?",
+      "answer": "Ikwirakwira rya MLN riterwa cyane n'ibidukikije. Ubushyuhe bwumbuye n'ubuhehere bwinshi bituma udukoko dutwara virusi twiyongera byoroshye. Mu kuhuza isuzuma ry'ikibabi cyawe n'amakuru y'ikirere y'aho uri, IkigoriSmart iragusobanurira atari gusa niba ikimera cyawe kirwaye, ahubwo n'uko bishoboka ko indwara ikwirakwira ku murima wawe wose cyangwa ku baturanyi bawe."
+    },
+    "q4": {
+      "question": "Nkora iki niba ibisubizo byange ari 'Bikomeye'?",
+      "answer": "Niba porogaramu yamenye kwandura gukomeye, igikorwa cyiza gifatwa ni ugurandura ibimera byandujwe ako kanya hanyuma ubikurure kure y'umurima wawe. Ibi bibuza virusi gukwirakwira ku bimera byiza. Porogaramu izatanga 'Ibikorwa byo Gutangira' n'Amahitamo y'Imiti' bijyanye n'amabwiriza agezweho yo mu Rwanda Agriculture Board (RAB)."
+    },
+    "q5": {
+      "question": "Ndashobora gukoresha porogaramu nta murandamubano?",
+      "answer": "Urashobora gufata amafoto no kuyabika muri porogaramu mugihe uri hanze. Ariko, kugira ngo ubone Isuzuma rya AI n'Ibyago by'Ikirere, uzakenera guhuza ku murandamubano (3G/4G cyangwa Wi-Fi) kugira ngo porogaramu ivugane na seriveri zacu n'abatanga amakuru y'ikirere."
+    }
+  },
+  "bottomCTA": {
+    "notLoggedIn": {
+      "title": "Tangira Uyu Munsi",
+      "description": "Fungura konti kugira ngo utangire kurinda ibigori byawe",
+      "signIn": "Injira",
+      "signUp": "Iyandikishe"
+    },
+    "loggedIn": {
+      "dashboard": "Jya ku Kibaho"
+    }
+  },
+  "navigation": {
+    "home": "Ahabanza",
+    "scan": "Sikana",
+    "alerts": "Impuruza",
+    "profile": "Umwirondoro"
+  },
+  "common": {
+    "readMore": "Soma byinshi",
+    "readLess": "Soma bike",
+    "cancel": "Hagarika",
+    "delete": "Siba",
+    "confirm": "Emeza"
+  },
+  "contact": {
+    "title": "Ufite Ikibazo?",
+    "subtitle": "Itsinda ryacu riri hano kugufasha. Duhamagare ukoresheje imwe muri izi nzira zikurikira.",
+    "emailLabel": "Imeyili",
+    "emailValue": "support@ikigori.rw",
+    "callLabel": "Telefone",
+    "callValue": "+250 788 123 456",
+    "socialLabel": "Dukurikire",
+    "socialValue": "@IkigoriSmart",
+    "copyright": "© 2026 IkigoriSmart. Uburenganzira bwose burarinzwe.",
+    "errorTitle": "Ntibishoboka Gufungura",
+    "errorMessage": "Ntabwo byashobotse gufungura iyi link. Nyamuneka gerageza wenyine."
+  },
+  "diagnosticStandards": {
+    "title": "Ibipimo by'Isuzuma",
+    "subtitle": "Menya ibyiciro bine by'ubuzima bw'ibigori n'indwara ya MLN byamenywe na IkigoriSmart."
+  },
+  "alerts": {
+    "title": "Impuruza",
+    "filterAll": "Byose",
+    "filterHigh": "Byinshi",
+    "filterMedium": "Hagati",
+    "filterLow": "Bike",
+    "showing": "Kwerekana impuruza {{count}}",
+    "sortBy": "Itondekanya",
+    "newestFirst": "Nshya Mbere",
+    "oldestFirst": "Ishaje Mbere",
+    "markAsRead": "Shyira Nk'Irasomwe",
+    "viewDetails": "Reba Ibisobanuro",
+    "noAlertsFound": "Nta Mpuruza Zabonetse",
+    "noAlertsDescription": "Nta mpuruza zihuye n'akayunguruzo kawe.",
+    "clearFilter": "Kuraho Akayunguruzo",
+    "noUnreadAlerts": "Nta mpuruza nshya ufite!",
+    "noUnreadAlertsDesc": "Nta mpuruza nshya ubu. Garuka nyuma kugira ngo ubone amakuru mashya.",
+    "loadError": "Ntibishobotse gupakulira impuruza.",
+    "retry": "Ongera Ugerageze",
+    "markAsReadError": "Gushyira impuruza nk'irasomwe byanze. Nyamuneka ongera ugerageze.",
+    "previous": "Ibanjirije",
+    "next": "Ikurikira",
+    "pageOf": "Urupapuro {{page}} kuri {{total}}"
+  },
+  "profile": {
+    "tabProfile": "Umwirondoro",
+    "tabTutorials": "Amasomo",
+    "tabMyLearning": "Ibyo Nize",
+    "tabPredictions": "Ibiteganywa",
+    "personalInfo": "Amakuru Bwite",
+    "security": "Umutekano",
+    "location": "Ahantu",
+    "firstName": "Izina ry'Ibanze",
+    "firstNamePlaceholder": "Andika izina ryawe ry'ibanze",
+    "lastName": "Izina ry'Umuryango",
+    "lastNamePlaceholder": "Andika izina ry'umuryango",
+    "email": "Imeyili",
+    "phoneNumber": "Nomero ya Telefone",
+    "phoneNumberPlaceholder": "07XXXXXXXX",
+    "password": "Ijambo ry'Ibanga",
+    "passwordPlaceholder": "Andika ijambo ry'ibanga rishya",
+    "confirmPassword": "Emeza Ijambo ry'Ibanga",
+    "confirmPasswordPlaceholder": "Emeza ijambo ry'ibanga rishya",
+    "district": "Akarere",
+    "emailNote": "Imeyili ntishobora guhindurwa",
+    "saveChanges": "Bika Impinduka",
+    "logOut": "Sohoka",
+    "logoutTitle": "Sohoka",
+    "logoutMessage": "Uremeza ko ushaka gusohoka?",
+    "cancel": "Hagarika",
+    "confirm": "Emeza",
+    "success": "Byagenze Neza",
+    "profileUpdated": "Umwirondoro wavuguruwe neza",
+    "filterAll": "Byose",
+    "filterVideo": "Video",
+    "filterReading": "Gusoma",
+    "tutorials": "Amasomo",
+    "noTutorialsFound": "Nta masomo yabonetse",
+    "noSavedTutorials": "Nta Masomo Yabitswe",
+    "noSavedTutorialsDesc": "Bika amasomo kuva mu isomo kugira ngo ukurikirane iterambere ryawe.",
+    "browseTutorials": "Reba Amasomo",
+    "saved": "Byabitswe",
+    "completed": "Byarangiye",
+    "inProgress": "Biragenda",
+    "progress": "Iterambere",
+    "errors": {
+      "firstNameRequired": "Izina ry'ibanze rirakenewe",
+      "lastNameRequired": "Izina ry'umuryango rirakenewe",
+      "phoneRequired": "Nomero ya telefone irakenewe",
+      "phoneInvalid": "Nyamuneka andika nomero ya telefone y'u Rwanda yemewe (07XXXXXXXX)",
+      "passwordMinLength": "Ijambo ry'ibanga rigomba kugira byibura inyuguti 8",
+      "passwordMismatch": "Amagambo y'ibanga ntabwo ahura"
+    },
+    "logoutSuccess": "Wasohokanywe neza",
+    "logoutError": "Gusohoka byanze. Nyamuneka ongera ugerageze.",
+    "updateSuccess": "Umwirondoro wavuguruwe neza.",
+    "updateError": "Kuvugurura umwirondoro byanze. Nyamuneka ongera ugerageze.",
+    "avatarSuccess": "Ifoto y'umwirondoro yavuguruwe.",
+    "avatarError": "Kohereza ifoto byanze. Nyamuneka ongera ugerageze.",
+    "passwordSuccess": "Ijambo ry'ibanga ryavuguruwe neza.",
+    "passwordError": "Kuvugurura ijambo ry'ibanga byanze. Nyamuneka ongera ugerageze.",
+    "passwordMismatch": "Amagambo banga ntahura.",
+    "passwordTooShort": "Ijambo banga rigomba kuba rifite inyuguti 8 nibura.",
+    "phoneInvalid": "Injiza nimero ya terefone y'u Rwanda igenga (07XXXXXXXX).",
+    "firstNameRequired": "Izina rya mbere rirasabwa.",
+    "lastNameRequired": "Izina rya nyuma rirasabwa.",
+    "districtRequired": "Hitamo akarere kawe.",
+    "predictions": {
+      "title": "Amateka y'Isuzuma",
+      "count_one": "Igiteganywa {{count}}",
+      "count_other": "Ibiteganywa {{count}}",
+      "empty": "Nta biteganywa byabitswe.",
+      "emptySubtext": "Kora isuzuma ubike ibisubizo kugira ngo ubibone hano.",
+      "loadError": "Ntibishobotse gupakulira ibiteganywa.",
+      "retry": "Ongera Ugerageze",
+      "deleteTitle": "Siba Igiteganywa",
+      "deleteMessage": "Uzi neza ko ushaka gusiba iki giteganywa? Ntabwo bishobora gusubizwa.",
+      "deleteSuccess": "Igiteganywa cyasibwe.",
+      "deleteError": "Gusiba igiteganywa byanze. Nyamuneka ongera ugerageze.",
+      "risk": "Ibyago"
+    }
+  },
+  "scan": {
+    "cameraTitle": "Sikana Ibigori",
+    "tips": "Inama",
+    "positionLeaf": "Shyira ikibabi imbere y'ikadiri",
+    "predictButton": "Teganya Indwara",
+    "tipsTitle": "Inama",
+    "tip1": "Menya neza ko hari urumuri ruhagije",
+    "tip2": "Yibanze ku kibabi",
+    "tip3": "Irinde ibicucu ku gihingwa",
+    "close": "Funga",
+    "diagnosisTitle": "Ibisubizo by'Isuzuma",
+    "viewWeatherRisk": "Reba Ibyago by'Ikirere →",
+    "healthyLabel": "Imiterere Myiza",
+    "healthyDesc": "Nta kimenyetso cy'indwara cyabonetswe ku kibabi.",
+    "earlyLabel": "Ibimenyetso byo Hakiri Kare Byabonetswe",
+    "earlyDesc": "Ibimenyetso bito by'indwara byabonetswe. Kurikirana neza.",
+    "moderateLabel": "Indwara yo Hagati",
+    "moderateDesc": "Ibimenyetso bigaragara by'indwara. Fata ingamba vuba.",
+    "severeLabel": "Indwara Ikomeye",
+    "severeDesc": "Indwara ikomeye yabonetswe. Fata ingamba ako kanya.",
+    "weatherForecast": "Teganya gukwirakwira kw'indwara yawe hashingiwe ku bihe by'ikirere",
+    "weatherTitle": "Isuzuma ry'Ibyago by'Ikirere",
+    "weatherSubtitle": "Ibihe by'ikirere by'aho uri bigira ingaruka ku gukwirakwira kw'indwara",
+    "temperature": "Ubushyuhe",
+    "humidity": "Ubuhehere",
+    "rainfall": "Imvura",
+    "highRiskWarning": "Ibyago byinshi byo gukwirakwira byabonetswe hashingiwe ku bihe by'ikirere.",
+    "viewRecommendations": "Reba Inama →",
+    "recommendationsTitle": "Inama",
+    "recommendationsSubtitle": "Ibikorwa byo gutangira kugira ngo ukemure indwara yabonetswe",
+    "uprootTitle": "Randura Ibimera Byandujwe",
+    "uprootDesc": "Kuraho kandi usenya ibimera byandujwe bikomeye ako kanya",
+    "fungicideTitle": "Koresha Umuti w'Indwara",
+    "fungicideDesc": "Koresha umuti usuzumwe mu ngano ikwiye",
+    "isolateTitle": "Tanga Ahantu",
+    "isolateDesc": "Buza gukwirakwira ukoresheje gutandukanya imirongo y'ibigori yibasiwe",
+    "monitorTitle": "Kurikirana Buri Munsi",
+    "monitorDesc": "Suzuma ibimera biri hafi buri masaha 24",
+    "feedbackTitle": "Sangiza Ibitekerezo Byawe",
+    "feedbackPlaceholder": "Andika ibitekerezo byawe hano...",
+    "saveToHistory": "Bika mu Mateka",
+    "home": "Ahabanza",
+    "weatherInputTitle": "Injiza Ikirere",
+    "selectDistrict": "Hitamo Akarere Kawe",
+    "selectDistrictSubtitle": "Hitamo akarere umurima wawe uri",
+    "weatherSource": "Inkomoko y'Ikirere",
+    "useCurrentWeather": "Ikirere cy'Ubu",
+    "enterManually": "Andika Wenyine",
+    "fetchingWeather": "Gukusanya amakuru y'ikirere...",
+    "weatherSourceNote": "Amakuru y'ikirere yakomoka kuri Open-Meteo kuri",
+    "lastUpdated": "Byavuguruwe bwa nyuma",
+    "fetchError": "Ntibyashobotse kubona amakuru y'ikirere",
+    "fetchErrorSubtitle": "Nyamuneka reba umurandamubano wawe hanyuma ugerageze",
+    "retry": "Ongera Ugerageze",
+    "weather": {
+      "validation": {
+        "temperatureRequired": "Ubushyuhe burakenewe",
+        "temperatureRange": "Ubushyuhe bugomba kuba hagati ya 10°C na 35°C",
+        "humidityRequired": "Ubuhehere burakenewe",
+        "humidityRange": "Ubuhehere bugomba kuba hagati ya 0% na 100%",
+        "rainfallRequired": "Imvura irakenewe",
+        "rainfallRange": "Imvura igomba kuba hagati ya 0mm na 500mm"
+      }
+    },
+    "previewConfirm": "Reba & Emeza →",
+    "weatherSummaryTitle": "Incamake y'Ikirere",
+    "weatherSummarySubtitle": "Ibi bihe bizakoreshwa mu guteganya ibyago byo gukwirakwira",
+    "apiData": "Amakuru ya API",
+    "manuallyEntered": "Yanditswe Wenyine",
+    "statusHigh": "Byinshi",
+    "statusNormal": "Bisanzwe",
+    "statusLow": "Bike",
+    "highRiskConditions": "Ibihe bimwe cyangwa byinshi byerekana ibyago byinshi byo gukwirakwira kw'indwara.",
+    "runPrediction": "Tangira Guteganya →",
+    "spreadRiskTitle": "Ibyago byo Gukwirakwira ",
+    "lowSpreadRisk": "Ibyago Bike byo Gukwirakwira",
+    "mediumSpreadRisk": "Ibyago byo Hagati byo Gukwirakwira",
+    "highSpreadRisk": "Ibyago Byinshi byo Gukwirakwira Byabonetswe",
+    "immediateActions": "Ibikorwa byo Gutangira",
+    "rateThisPrediction": "Tanga Amanota kuri Iki Giteganywa",
+    "shareObservations": "Sangiza ibyo wabonye...",
+    "preview": {
+      "severityLabel": "Ubukana bwa MLN",
+      "lowRisk": "Ibyago Bike",
+      "moderateRisk": "Ibyago byo Hagati",
+      "highRisk": "Ibyago Byinshi",
+      "vectorsInactive": "< 22°C — Udukoko ntidukora",
+      "moderateConcern": "Ibyago byo hagati",
+      "dangerZone": "⚠ Akaga",
+      "vectorsSlowDown": "> 30°C — Udukoko duratinda",
+      "lowHumidityRisk": "< 60% — Ibyago bike",
+      "droughtStress": "< 20mm — ⚠ Icyuho",
+      "sufficientRainfall": "> 50mm — Imvura ihagije"
+    },
+    "validation": {
+      "error": "Ikosa ryo Kwemeza",
+      "invalidFileType": "Ubwoko bw'ifoto butemewe. Hitamo ifoto ya JPEG, PNG, cyangwa BMP.",
+      "fileTooLarge": "Ifoto ni nini cyane. Ingano ntarengwa ni 10 MB.",
+      "imageRequired": "Nyamuneka hitamo ifoto yo gusikana.",
+      "permissionRequired": "Uruhushya rurakenewe kugira ngo ukoreshe kamera cyangwa ububiko bw'amafoto."
+    },
+    "api": {
+      "error": "Ikosa",
+      "apiUnavailable": "Serivisi ntiboneka. Nyamuneka ongera ugerageze nyuma.",
+      "predictionFailed": "Guteganya byanze. Nyamuneka ongera ugerageze.",
+      "networkError": "Ikibazo cy'umurandamubano. Reba umurandamubano wawe hanyuma ugerageze.",
+      "analyzing": "Gusesengura ifoto..."
+    },
+    "severity": {
+      "healthyLabel": "Imiterere Myiza",
+      "healthyDesc": "Nta kimenyetso cy'indwara ya MLN cyabonetswe. Ikimera cyawe kigaragara neza. Komeza gukurikirana buri gihe.",
+      "earlyLabel": "Ibimenyetso byo Hakiri Kare",
+      "earlyDesc": "Imirongo y'umuhondo itangiye n'utudomo duto tw'umuhondo byabonetswe. Fata ingamba ubu mbere yuko indwara ikomera.",
+      "moderateLabel": "Indwara yo Hagati",
+      "moderateDesc": "Ikibabi gikama cyane n'utudomo tw'umuhondo dukwirakwira byabonetswe. Kuvura vuba birasabwa cyane.",
+      "severeLabel": "Indwara Ikomeye",
+      "severeDesc": "Ikibabi cyashize kandi cyumye rwose byabonetswe. Randura kandi usenya ibimera byandujwe ako kanya kugira ngo ubuze gukwirakwira."
+    },
+    "diagnosis": {
+      "severityLevel": "Urwego rw'Ubukana",
+      "confidenceResult": "Ibisubizo by'Ikizere",
+      "confidenceHigh": "IKIZERE KININI",
+      "confidenceMedium": "IKIZERE RYO HAGATI",
+      "confidenceLow": "IKIZERE GITO"
+    },
+    "prediction": {
+      "apiError": "Guteganya byanze. Reba umurandamubano wawe hanyuma ugerageze.",
+      "running": "Guteganya..."
+    },
+    "feedback": {
+      "title": "Tanga Amanota kuri Iki Giteganywa",
+      "placeholder": "Sangiza ibitekerezo byawe ku bisubizo...",
+      "submit": "Ohereza Ibitekerezo",
+      "submitSuccess": "Murakoze ku makuru yawe!",
+      "submitError": "Kohereza ibitekerezo byanze. Nyamuneka ongera ugerageze.",
+      "alreadySubmitted": "Wamaze kohereza ibitekerezo kuri iki giteganywa.",
+      "savePredictionFirst": "Nyamuneka bika igiteganywa mu mateka mbere yo kohereza ibitekerezo."
+    },
+    "history": {
+      "save": "Bika mu Mateka",
+      "saveSuccess": "Igiteganywa cybitswe mu mateka yawe.",
+      "saveError": "Kubika igiteganywa byanze. Nyamuneka ongera ugerageze."
+    },
+    "ipm": {
+      "immediate": "Igikorwa cyo Gutangira",
+      "monitor": "Kurikirana",
+      "preventive": "Gukumira",
+      "filterAll": "Byose",
+      "aiTitle": "Inama Itangwa na AI",
+      "empty": "Nta nama zabonetse kuri iyi nsobanuro.",
+      "loadError": "Ntibishobotse gutanga inama. Nyamuneka ongera ugerageze.",
+      "retry": "Ongera Ugerageze"
+    }
+  },
+  "tutorials": {
+    "saveSuccess": "Isomo ryabitswe mu Byo Nize.",
+    "saveError": "Kubika isomo byanze.",
+    "alreadySaved": "Iri somo rimaze kubikwa mu masomo yawe.",
+    "deleteSuccess": "Isomo ryakuweho mu Byo Nize.",
+    "deleteError": "Gukuraho isomo byanze.",
+    "accessContent": "Kanda hano kugira ngo ubone ibirimo",
+    "typeVideo": "Videwo",
+    "typeReading": "Gusoma",
+    "loadingVideo": "Gupakulira videwo...",
+    "loadingPDF": "Gupakulira PDF...",
+    "loadingContent": "Gupakulira ibirimo...",
+    "contentError": "Ntibishoboye gupakulira ibirimo",
+    "contentErrorMessage": "Ntibishoboye gupakulira ibirimo. Reba ko umurongo wa interineti uhari hanyuma ugerageze.",
+    "retry": "Gerageza Ukundi",
+    "tutorialContent": "Ibirimo by'Isomo",
+    "noContentAvailable": "Nta birimo bihari kuri iri somo."
+  },
+  "learning": {
+    "empty": "Nta masomo abitswe. Reba amasomo kugira ngo utangire.",
+    "neverAccessed": "Ntabwo wagiye",
+    "savedOn": "Byabitswe ku",
+    "lastAccessed": "Byasomwe bwa nyuma",
+    "progressLabel": "Aho Ugeze",
+    "addNoteLabel": "Ongeraho Inyandiko",
+    "notePlaceholder": "Andika inyandiko zawe kuri iri somo...",
+    "addNote": "Ongeraho Inyandiko",
+    "noteAdded": "Yongeweho",
+    "noNotes": "Nta nyandiko zihari. Ongeraho inyandiko yawe ya mbere hejuru.",
+    "deleteNoteTitle": "Siba Inyandiko",
+    "deleteNoteMessage": "Uzi neza ko ushaka gusiba iyi nyandiko?",
+    "deleteConfirmTitle": "Kuraho Isomo",
+    "deleteConfirmMessage": "Uzi neza ko ushaka gukuraho iri somo mu rutonde rwawe rwo kwiga?",
+    "updateProgress": "Hindura Aho Ugeze",
+    "editProgressTitle": "Hindura Aho Ugeze",
+    "delete": "Kuraho",
+    "progressSuccess": "Aho ugeze byahinduwe neza.",
+    "progressError": "Guhinduza aho ugeze byanze. Gerageza nanone.",
+    "noteAddSuccess": "Inyandiko yongeweho neza.",
+    "noteAddError": "Kongeraho inyandiko byanze. Gerageza nanone.",
+    "noteDeleteSuccess": "Inyandiko yasibwe.",
+    "noteDeleteError": "Gusiba inyandiko byanze. Gerageza nanone."
+  }
+}
