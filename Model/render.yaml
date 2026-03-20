@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ikigori-mln-api
+    env: python
+    rootDir: mln_api
+    region: frankfurt
+    plan: free
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: MODEL_PATH
+        value: "../models/production/baseline_final.pt"
+      - key: ALLOWED_ORIGINS
+        value: "*"

@@ -1,0 +1,137 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# ============================================
+# MODELS & WEIGHTS (Large Files)
+# ============================================
+# PyTorch models
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# TensorFlow models
+*.h5
+*.pb
+*.tflite
+saved_model/
+
+# ONNX models
+*.onnx
+
+# Model directories
+models/production/*.pt
+models/production/*.pth
+models/cleaning/*.pt
+models/cleaning/*.pth
+models/encoders/*.pkl
+models/encoders/*.joblib
+
+# Training artifacts
+*.pkl
+training_history.pkl
+*.joblib
+
+# ============================================
+# DATASETS & IMAGES (Large Files)
+# ============================================
+# Raw data folders
+raw_data/
+dataset/
+data_review/
+
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.JPEG
+*.JPG
+*.PNG
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Organized image folders
+mln_labels/
+mln_labels_v2/
+visualizations/
+
+# CSV datasets (can be large)
+*.csv
+spread_risk_dataset.csv
+
+# Large JSON files
+mln_severity_labels.json
+mln_severity_labels_v2.json
+
+# ============================================
+# API & ENVIRONMENT
+# ============================================
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# API cache
+mln_api/app/__pycache__/
+weather_risk_api/app/__pycache__/
+
+# ============================================
+# ANACONDA & CONDA
+# ============================================
+anaconda_projects/
+.conda/
+*.conda
+
+# ============================================
+# LOGS & TEMPORARY FILES
+# ============================================
+*.log
+*.tmp
+*.temp
+logs/
+*.out
+
+# ============================================
+# RESULTS & OUTPUTS
+# ============================================
+models/results_img/
+outputs/
+experiments/
+checkpoints/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
