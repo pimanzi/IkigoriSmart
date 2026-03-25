@@ -36,6 +36,7 @@ DEVICE     = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 IMG_SIZE   = 224
 MAX_FILE_MB = 10
 CLASS_NAMES = ["maize", "not_maize"]
+MAIZE_CONFIDENCE_THRESHOLD = 0.995  # must exceed this to be accepted as maize
 
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
 IMAGENET_STD  = [0.229, 0.224, 0.225]
@@ -123,15 +124,14 @@ def run_inference(image: Image.Image) -> dict:
         probs   = torch.softmax(outputs, dim=1)[0]
     elapsed_ms = (time.perf_counter() - t0) * 1000
 
-    pred_idx   = probs.argmax().item()
-    pred_class = CLASS_NAMES[pred_idx]
-    confidence = probs[pred_idx].item()
+    maize_prob = probs[0].item()
+    is_maize   = maize_prob >= MAIZE_CONFIDENCE_THRESHOLD
 
     return {
-        "is_maize":             pred_class == "maize",
-        "predicted_class":      pred_class,
-        "confidence":           round(confidence, 6),
-        "maize_probability":    round(probs[0].item(), 6),
+        "is_maize":             is_maize,
+        "predicted_class":      "maize" if is_maize else "not_maize",
+        "confidence":           round(maize_prob, 6),
+        "maize_probability":    round(maize_prob, 6),
         "not_maize_probability": round(probs[1].item(), 6),
         "inference_time_ms":    round(elapsed_ms, 2),
     }
