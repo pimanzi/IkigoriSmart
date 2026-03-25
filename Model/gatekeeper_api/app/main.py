@@ -130,9 +130,9 @@ def run_inference(image: Image.Image) -> dict:
     return {
         "is_maize":             is_maize,
         "predicted_class":      "maize" if is_maize else "not_maize",
-        "confidence":           round(maize_prob, 6),
-        "maize_probability":    round(maize_prob, 6),
-        "not_maize_probability": round(probs[1].item(), 6),
+        "confidence":           maize_prob,
+        "maize_probability":    maize_prob,
+        "not_maize_probability": probs[1].item(),
         "inference_time_ms":    round(elapsed_ms, 2),
     }
 
