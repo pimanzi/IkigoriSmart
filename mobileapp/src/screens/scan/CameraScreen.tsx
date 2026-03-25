@@ -24,6 +24,8 @@ interface CameraScreenProps {
   };
 }
 
+type GatekeeperStatus = 'idle' | 'checking' | 'maize' | 'not_maize';
+
 export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route }) => {
   const { theme } = useTheme();
   const { t } = useTranslation();
@@ -32,6 +34,7 @@ export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route })
   const [flashActive, setFlashActive] = useState(false);
   const [loading, setLoading] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [gatekeeperStatus, setGatekeeperStatus] = useState<GatekeeperStatus>('idle');
   const autoPredictRef = useRef(false);
 
   const { voiceAction, voiceImageUri, voiceTs } = route?.params ?? {};
@@ -58,14 +61,14 @@ export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route })
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [voiceTs]);
 
-  // Trigger predict automatically after voice pre-load sets the image
+  // Trigger predict automatically after voice pre-load sets the image — wait for gatekeeper
   useEffect(() => {
-    if (autoPredictRef.current && selectedImage) {
+    if (autoPredictRef.current && selectedImage && gatekeeperStatus === 'maize') {
       autoPredictRef.current = false;
       handlePredict();
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedImage]);
+  }, [selectedImage, gatekeeperStatus]);
 
   const validateImage = (uri: string): boolean => {
     if (!isValidImageUri(uri)) {
@@ -73,6 +76,36 @@ export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route })
       return false;
     }
     return true;
+  };
+
+  const runGatekeeperCheck = async (imageUri: string) => {
+    setGatekeeperStatus('checking');
+    try {
+      const formData = new FormData();
+      const filename = imageUri.split('/').pop() || 'image.jpg';
+      const ext = filename.split('.').pop()?.toLowerCase();
+      const mimeType =
+        ext === 'webp' ? 'image/webp' :
+        ext === 'png'  ? 'image/png'  : 'image/jpeg';
+      formData.append('file', { uri: imageUri, name: filename, type: mimeType } as any);
+
+      const gatekeeperUrl = process.env.EXPO_PUBLIC_GATEKEEPER_API_URL;
+      const response = await fetch(`${gatekeeperUrl}/predict`, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' },
+      });
+
+      if (!response.ok) {
+        setGatekeeperStatus('maize'); // fail open — don't block the farmer
+        return;
+      }
+
+      const data = await response.json();
+      setGatekeeperStatus(data.is_maize ? 'maize' : 'not_maize');
+    } catch {
+      setGatekeeperStatus('maize'); // network error — fail open
+    }
   };
 
   const callPredictionAPI = async (imageUri: string): Promise<PredictionResponse | null> => {
@@ -127,7 +160,7 @@ export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route })
       }
 
       const result = await ImagePicker.launchCameraAsync({
-        mediaTypes: ImagePicker.MediaTypeOptions.Images,
+        mediaTypes: ['images'] as any,
         quality: 0.8,
       });
 
@@ -136,6 +169,7 @@ export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route })
         if (validateImage(imageUri)) {
           setSelectedImage(imageUri);
           markImageSelected(imageUri);
+          runGatekeeperCheck(imageUri);
         }
       }
     } catch (error) {
@@ -149,7 +183,7 @@ export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route })
   const handlePickImage = async () => {
     try {
       const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
-      
+
       if (status !== 'granted') {
         Toast.show({
           type: 'error',
@@ -159,7 +193,7 @@ export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route })
       }
 
       const result = await ImagePicker.launchImageLibraryAsync({
-        mediaTypes: ImagePicker.MediaTypeOptions.Images,
+        mediaTypes: ['images'] as any,
         quality: 0.8,
       });
 
@@ -168,6 +202,7 @@ export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route })
         if (validateImage(imageUri)) {
           setSelectedImage(imageUri);
           markImageSelected(imageUri);
+          runGatekeeperCheck(imageUri);
         }
       }
     } catch (error) {
@@ -244,14 +279,57 @@ export const CameraScreen: React.FC<CameraScreenProps> = ({ navigation, route })
         </View>
       </View>
 
+      {/* Gatekeeper Status Badge */}
+      {selectedImage && gatekeeperStatus !== 'idle' && (
+        <View style={styles.gatekeeperBadge}>
+          {gatekeeperStatus === 'checking' ? (
+            <>
+              <ActivityIndicator size="small" color={theme.colors.brandMain} />
+              <Text style={[styles.gatekeeperText, { color: theme.colors.textSecondary }]}>
+                {t('scan.gatekeeperChecking')}
+              </Text>
+            </>
+          ) : gatekeeperStatus === 'maize' ? (
+            <>
+              <Ionicons name="checkmark-circle" size={16} color="#16a34a" />
+              <Text style={[styles.gatekeeperText, { color: '#16a34a' }]}>
+                {t('scan.gatekeeperAccepted')}
+              </Text>
+            </>
+          ) : (
+            <>
+              <Ionicons name="close-circle" size={16} color="#dc2626" />
+              <Text style={[styles.gatekeeperText, { color: '#dc2626' }]}>
+                {t('scan.gatekeeperRejected')}
+              </Text>
+            </>
+          )}
+        </View>
+      )}
+
       {/* Predict Button */}
       {selectedImage && (
         <TouchableOpacity
-          style={[styles.predictBtn, { backgroundColor: theme.colors.brandMain }]}
+          style={[
+            styles.predictBtn,
+            {
+              backgroundColor:
+                gatekeeperStatus === 'maize' ? theme.colors.brandMain : theme.colors.surfaceHover,
+              opacity: gatekeeperStatus === 'checking' ? 0.5 : 1,
+            },
+          ]}
           onPress={handlePredict}
           activeOpacity={0.8}
+          disabled={gatekeeperStatus !== 'maize' || loading}
         >
-          <Text style={styles.predictText}>{t('scan.predictButton')}</Text>
+          <Text
+            style={[
+              styles.predictText,
+              { color: gatekeeperStatus === 'maize' ? '#fff' : theme.colors.textSecondary },
+            ]}
+          >
+            {t('scan.predictButton')}
+          </Text>
         </TouchableOpacity>
       )}
 
@@ -328,6 +406,21 @@ const styles = StyleSheet.create({
   selectedImage: {
     width: '100%',
     height: '100%',
+  },
+  gatekeeperBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    marginHorizontal: spacing.lg,
+    marginBottom: spacing.sm,
+    minHeight: 22,
+  },
+  gatekeeperText: {
+    fontSize: 13,
+    fontWeight: '500',
+    flexShrink: 1,
+    textAlign: 'center',
   },
   predictBtn: {
     marginHorizontal: spacing.lg,

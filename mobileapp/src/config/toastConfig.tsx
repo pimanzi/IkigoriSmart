@@ -1,14 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
 import { BaseToastProps } from 'react-native-toast-message';
 
 export const toastConfig = {
   success: ({ text1 }: BaseToastProps) => (
     <View style={styles.successContainer}>
-      <View style={styles.iconContainer}>
-        <Ionicons name="checkmark-circle" size={24} color="#10B981" />
-      </View>
       <Text style={styles.successText} numberOfLines={2}>
         {text1}
       </Text>
@@ -16,9 +12,6 @@ export const toastConfig = {
   ),
   error: ({ text1 }: BaseToastProps) => (
     <View style={styles.errorContainer}>
-      <View style={styles.iconContainer}>
-        <Ionicons name="close-circle" size={24} color="#EF4444" />
-      </View>
       <Text style={styles.errorText} numberOfLines={2}>
         {text1}
       </Text>
@@ -52,9 +45,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
-  },
-  iconContainer: {
-    marginRight: 12,
   },
   successText: {
     flex: 1,
