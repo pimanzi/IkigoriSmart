@@ -31,9 +31,11 @@ IkigoriSmart helps Rwandan farmers detect and manage Maize Lethal Necrosis (MLN)
 |---|---|
 | Demo videos | [https://drive.google.com/drive/folders/1fQonRh_-1f2YBB8Jku9gnXbIPRZGPVJX?usp=sharing] |
 | Analysis and research document | [https://docs.google.com/document/d/1RJscQT1HnRixudaA6xrOGvlUb36tS5J8DScshhCOMiY/edit?usp=sharing] |
+| Farmer Mobile App APK| [https://drive.google.com/drive/folders/1hhzdr_GrFJjTpGtU7lrsMSeDXvfZx-vO?usp=sharing] |
 | Admin web app | [https://ikigorismart-admin.netlify.app/] |
 | MLN Severity API Docs | [https://ikigorismart.onrender.com/docs] |
 | MLN Spread Risk API Docs | [https://ikigori-weather-risk-api.onrender.com/docs] |
+| Gatekeeper Model Docs | [https://ikigorismart-gatekeeper-api.onrender.com/docs] |
 | Email confirmation page | [https://ikigori-signup-confirm.netlify.app/] |
 | GitHub repository | https://github.com/pimanzi/IkigoriSmart.git |
 
